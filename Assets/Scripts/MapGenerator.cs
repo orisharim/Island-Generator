@@ -5,19 +5,19 @@ using System;
 public class MapGenerator: MonoBehaviour{
     [Header("Sprites")]
 	public Sprite floor;
-    public Sprite left;
-    public Sprite leftDownCorner;
-    public Sprite leftUpCorner;
-    public Sprite up;
-    public Sprite down;
-    public Sprite right;
-    public Sprite rightDownCorner;
-    public Sprite rightUpCorner;
+    	public Sprite left;
+    	public Sprite leftDownCorner;
+    	public Sprite leftUpCorner;
+    	public Sprite up;
+    	public Sprite down;
+    	public Sprite right;
+    	public Sprite rightDownCorner;
+    	public Sprite rightUpCorner;
 	public Sprite upLeftCornerConnector;
 	public Sprite downLeftCornerConnector;
 	public Sprite upRightCornerConnector;
 	public Sprite downRightCornerConnector;
-    public Sprite water;
+    	public Sprite water;
 	public Sprite bush;
 	public Sprite berry;
 	public Sprite rock;
@@ -42,7 +42,6 @@ public class MapGenerator: MonoBehaviour{
 	int[,] berryMap;
 
 	void Start() {
-		Debug.Log("among us");
 		GenerateMap();
 		ObjectsPlacer(GenerateNoiseTexture(0.2f,0.6f),bushMap,bush,"bush",true);
 		ObjectsPlacer(GenerateNoiseTexture(0.7f,0.8f),rockMap,rock,"rock",false);
@@ -194,7 +193,7 @@ public class MapGenerator: MonoBehaviour{
            
         }
     }
-	//method that creates a noise texture
+    //method that creates a noise texture
     public Texture2D GenerateNoiseTexture(float frequency, float limit)
     {                                                        
 
