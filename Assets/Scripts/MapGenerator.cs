@@ -25,7 +25,7 @@ public class MapGenerator: MonoBehaviour{
 	public Sprite lowerTree;
 	public Sprite upperTree;
 	
-	[Header(" ")]
+	[Header("Settings")]
 	public int width;
 	public int height;
 	public string seed;
